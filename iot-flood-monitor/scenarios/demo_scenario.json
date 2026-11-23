@@ -1,0 +1,44 @@
+﻿{
+  "name": "post_flood_intrusion_demo",
+  "time_scale": 60.0,
+  "default_intrusion_node": "WQ-BID-001",
+  "default_interruption_node": "WQ-BID-018",
+  "nodes": {
+    "WQ-BID-001": {
+      "label": "Holding-Centre Water Point",
+      "latitude": 27.9115,
+      "longitude": 85.1462,
+      "ph_base": 7.20,
+      "turbidity_base": 4.5,
+      "tds_base": 180,
+      "flow_base": 14.0
+    },
+    "WQ-BID-002": {
+      "label": "Community Tap",
+      "latitude": 27.9158,
+      "longitude": 85.1510,
+      "ph_base": 7.15,
+      "turbidity_base": 3.8,
+      "tds_base": 165,
+      "flow_base": 12.5
+    },
+    "WQ-BID-018": {
+      "label": "Reservoir Outlet",
+      "latitude": 27.9072,
+      "longitude": 85.1415,
+      "ph_base": 7.25,
+      "turbidity_base": 4.2,
+      "tds_base": 175,
+      "flow_base": 16.0
+    }
+  },
+  "intrusion_model": {
+    "rise_minutes": 5.0,
+    "washout_tau_minutes": 25.0,
+    "turbidity_spike_ntu": 340.0,
+    "tds_gain_per_ntu": 1.35,
+    "ph_drop_max": 1.35,
+    "ph_floor": 5.80,
+    "flow_transient_amp": 3.5
+  }
+}
