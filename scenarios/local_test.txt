@@ -1,0 +1,2 @@
+2    outage_on
+12   outage_off

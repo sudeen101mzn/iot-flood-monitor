@@ -1,0 +1,7 @@
+# Repeatable demo timeline: seconds since start, then the command.
+# Same commands you can type by hand. Nothing here hard-codes a sensor value.
+5    trigger_intrusion          # WQ-BID-001: turbidity rises past 50 then 200 NTU
+60   outage_on                  # cut the network; the buffer fills
+120  outage_off                 # restore; backoff reconnect, then batched replay
+150  supply_interruption_on     # WQ-BID-018: flow = 0 (Major alarm)
+180  supply_interruption_off
